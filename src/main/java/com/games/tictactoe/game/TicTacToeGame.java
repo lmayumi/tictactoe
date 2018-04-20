@@ -1,7 +1,7 @@
 package com.games.tictactoe.game;
 
 
-import com.games.tictactoe.board.TicTacToeBoard;
+import com.games.tictactoe.state.board.TicTacToeBoard;
 import com.games.tictactoe.player.PlayerType;
 import com.games.tictactoe.player.TicTacToePlayer;
 

@@ -1,9 +1,6 @@
-package com.games.tictactoe.board.standardboard;
+package com.games.tictactoe.state.board;
 
-import com.games.tictactoe.board.PositionValidator;
-import com.games.tictactoe.board.SimplePositionSupplier;
-import com.games.tictactoe.board.TicTacToeBoard;
-import com.games.tictactoe.board.standardgrid.Grid3X3;
+import com.games.tictactoe.state.grid.Grid3X3;
 import com.games.tictactoe.player.PlayerType;
 
 import java.util.List;

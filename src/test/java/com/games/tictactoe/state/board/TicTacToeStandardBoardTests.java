@@ -1,4 +1,4 @@
-package com.games.tictactoe.board.standardboard;
+package com.games.tictactoe.state.board;
 
 //TODO
 public class TicTacToeStandardBoardTests {

@@ -1,4 +1,4 @@
-package com.games.tictactoe.board.standardgrid;
+package com.games.tictactoe.state.grid;
 
 import java.util.Optional;
 

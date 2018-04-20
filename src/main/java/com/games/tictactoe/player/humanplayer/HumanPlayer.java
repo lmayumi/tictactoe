@@ -1,6 +1,6 @@
 package com.games.tictactoe.player.humanplayer;
 
-import com.games.tictactoe.board.PositionValidator;
+import com.games.tictactoe.state.board.PositionValidator;
 import com.games.tictactoe.player.PlayerType;
 import com.games.tictactoe.player.TicTacToePlayer;
 

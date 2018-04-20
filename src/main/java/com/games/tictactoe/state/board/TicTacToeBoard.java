@@ -1,4 +1,4 @@
-package com.games.tictactoe.board;
+package com.games.tictactoe.state.board;
 
 import com.games.tictactoe.player.PlayerType;
 
