@@ -28,7 +28,7 @@ public class SimpleRunnerCallback implements GameMessageCallback {
     }
 
     @Override
-    public void reportPlayer2Win(String gameStatus){
+    public void reportPlayer2Win(boolean isWin, boolean isDraw, String gameStatus) {
         System.out.println("");
         System.out.println(gameStatus);
         System.out.println("I won. Thanks for playing.");
