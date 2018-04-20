@@ -13,21 +13,21 @@ public class SimpleRunner implements TicTacToeRunner {
         callback.reportInstructions(game.toString());
 
         while (game.notGameOver()) {
-            int movePlayer1 = getUntilValid(game.getplayer1(), () -> callback.getMove(), () -> callback.moveError());
+            int movePlayer1 = getUntilValid(game.getplayer1(), callback::getMove, callback::moveError);
             game.setMove(movePlayer1, game.getplayer1().getPlayerType());
 
-            if (game.isWin()) {
+            if (game.isGameOver()) {
                 callback.reportPlayer1Win(game.isWin(), game.isDraw(), game.toString());
                 return;
             }
 
-            int movePlayer2 = getUntilValid(game.getplayer2(), () -> callback.getMove(), () -> callback.moveError());
+            int movePlayer2 = getUntilValid(game.getplayer2(), callback::getMove, callback::moveError);
             game.setMove(movePlayer1, game.getplayer2().getPlayerType());
 
             callback.reportStatus(game.getPosDescription(movePlayer1), game.getPosDescription(movePlayer2));
 
-            if (game.isWin()) {
-                callback.reportPlayer2Win(game.toString());
+            if (game.isGameOver()) {
+                callback.reportPlayer2Win(game.isWin(), game.isDraw(), game.toString());
                 return;
             }
         }
